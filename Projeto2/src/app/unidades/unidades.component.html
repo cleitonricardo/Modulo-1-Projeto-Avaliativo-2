@@ -1,0 +1,55 @@
+<div class="">
+    <div class="row">
+        <div class="col-2 ">
+            <div class="col vh-100 ">
+                <div class="p-2 " [routerLink]="['']"><img style="width:60%" src="assets/imagem2.png"></div>
+                <div class="p-2 "><button type="submit" class="btn btn-outline-success" [routerLink]="['/dashboard']">Dashboard</button></div>
+                <div class="p-2 "><button type="submit" class="btn btn-success" [routerLink]="['/unidades']">Unidades</button></div>
+                <div class="p-2 "><button type="submit" class="btn btn-outline-success" [routerLink]="['/consumo']">Cadastro de<br> energia gerada</button></div>
+            </div>
+        </div>
+        <div class="col-10 ">
+            <h1>Unidades</h1>
+            <div class="container">
+            <div class="card list-car">
+            <h5 class="card-header">Lista de unidades</h5>
+            <div class="card-body">
+            <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Apelido</th>
+                <th scope="col">Local</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let car of lista">
+                <td>{{car.id}}</td>
+                <td>{{car.apelido}}</td>
+                <td>{{car.local}}</td>
+                <td>{{car.marca}}</td>
+                <td>{{car.modelo}}</td>
+                
+                <td>
+                  <button type="button" class="btn btn-warning btn-sm" >Editar</button>
+                  <button type="button" class="btn btn-danger btn-sm ml-1" >Remover</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </div>
+    <div class="col-1 "></div>
+      </div>
+     
+    </div>
+    
+    </div>
+    
+</div>
+
+</div>
+
