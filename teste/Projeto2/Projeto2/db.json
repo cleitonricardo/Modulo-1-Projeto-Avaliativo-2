@@ -1,0 +1,32 @@
+{
+    "usina": [{
+            "ID": "156",
+            "Apelido": "Painel 1",
+            "Local": "Rua 5",
+            "Marca": "Canadian",
+            "Modelo": "155w"
+        },
+        {
+            "ID": "1562",
+            "Apelido": "Painel 2",
+            "Local": "Rua 15",
+            "Marca": "Risen",
+            "Modelo": "100w"
+
+        }, {
+            "ID": "523",
+            "Apelido": "Painel 3",
+            "Local": "Rio de janeiro",
+            "Marca": "Hanwha",
+            "Modelo": "200w"
+        },
+        {
+            "ID": "9523",
+            "Apelido": "Painel 4",
+            "Local": "São Paulo",
+            "Marca": "Hanwha",
+            "Modelo": "100w"
+        }
+    ],
+    "geracoes": []
+}
