@@ -1,31 +1,38 @@
 {
     "usina": [{
-            "ID": "156",
-            "Apelido": "Painel 1",
-            "Local": "Rua 5",
-            "Marca": "Canadian",
-            "Modelo": "155w"
+            "id": "156",
+            "apelido": "Painel 1",
+            "local": "Rua 5",
+            "marca": "Canadian",
+            "modelo": "155w"
         },
         {
-            "ID": "1562",
-            "Apelido": "Painel 2",
-            "Local": "Rua 15",
-            "Marca": "Risen",
-            "Modelo": "100w"
+            "id": "1562",
+            "apelido": "Painel 2",
+            "local": "Rua 15",
+            "marca": "Risen",
+            "modelo": "100w"
 
         }, {
-            "ID": "523",
-            "Apelido": "Painel 3",
-            "Local": "Rio de janeiro",
-            "Marca": "Hanwha",
-            "Modelo": "200w"
+            "id": "523",
+            "apelido": "Painel 3",
+            "local": "Rio de janeiro",
+            "marca": "Hanwha",
+            "modelo": "200w"
         },
         {
-            "ID": "9523",
-            "Apelido": "Painel 4",
-            "Local": "São Paulo",
-            "Marca": "Hanwha",
-            "Modelo": "100w"
+            "id": "9523",
+            "apelido": "Painel 4",
+            "local": "São Paulo",
+            "marca": "Hanwha",
+            "modelo": "100w"
+        },
+        {
+            "id": "9523",
+            "apelido": "Painel 4",
+            "local": "São Paulo",
+            "marca": "Hanwha",
+            "modelo": "100w"
         }
     ],
     "geracoes": []

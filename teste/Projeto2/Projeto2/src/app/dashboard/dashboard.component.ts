@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Dashboard } from '../dashboard';
-import { DashboardService } from './dashboard.service';
+
+import { Dashboard } from './dashboard';
+
+
 
 
 @Component({
@@ -8,12 +10,15 @@ import { DashboardService } from './dashboard.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit {
 
-  constructor(private _dashboardService:DashboardService){  }
-  public dashboard:Dashboard[];
+export class DashboardComponent implements OnInit {
+ 
+
+  constructor() {}
 
   ngOnInit(): void {
+    
+
     }
 }
 
