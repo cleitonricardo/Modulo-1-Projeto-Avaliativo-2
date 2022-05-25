@@ -13,36 +13,36 @@
             <div class="row">
                 <div class="col-10">
                     <div class="row">
-                        
+
                         <div class="col-10 ">
                             <div class="row ">
                                 <div class="col  mt-5 text-start">
                                     <h4>Cadastro de unidades Geradoras</h4>
-                                    
+
                                 </div>
                                 <div class="row   text-start">
                                     <p>Apelido</p>
-                                    <input type="email" id="apelido" class="form-control" style="width: 200px;">
+                                    <input type="text" [(ngModel)]="usina.apelido" id="apelido" class="form-control" style="width: 200px;">
                                 </div>
                                 <div class="row   text-start">
                                     <p>Local</p>
-                                    <input type="email" id="local" class="form-control "  style="width: 400px;" >
+                                    <input type="text" [(ngModel)]="usina.local" id="local" class="form-control " style="width: 400px;">
                                 </div>
-                                <div class="row  text-start" >
+                                <div class="row  text-start">
                                     <p>Marca</p>
-                                    <input type="email" id="marca" class="form-control" style="width: 400px;">
+                                    <input type="text" [(ngModel)]="usina.marca" id="marca" class="form-control" style="width: 400px;">
                                 </div>
                                 <div class="row    text-start">
                                     <p>Modelo</p>
-                                    <input type="email" id="modelo" class="form-control" style="width: 400px;">
+                                    <input type="text" [(ngModel)]="usina.modelo" id="modelo" class="form-control" style="width: 400px;">
                                 </div>
                                 <div class="form-check mt-5 ">
                                     <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       Ativo
                                     </label>
-                                  </div>
-                                  <div class="p-2 mt-3"><button type="submit" class="btn btn-primary mx-auto" style="width: 200px;" (click)="Salva()">Salvar</button></div>
+                                </div>
+                                <div class="p-2 mt-3"><button type="submit" class="btn btn-primary mx-auto" style="width: 200px;" (click)="Salva()">Salvar</button></div>
                             </div>
                         </div>
                         <div class="col-1 "></div>
@@ -50,8 +50,8 @@
                 </div>
             </div>
         </div>
-        
-    
+
+
 
 
     </div>

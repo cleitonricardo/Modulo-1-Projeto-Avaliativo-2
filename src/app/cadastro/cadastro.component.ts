@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GeracoesService } from '../services/geracoes.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'esp-cadastro',
@@ -6,14 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent implements OnInit {
+  private apiUrl ="http://localhost:3000/usina";
+  usina:any;
+  constructor(private http: HttpClient) {
+    this.usina ={
+      apelido:'',
+      local:'',
+      marca:'',
+      modelo:''
 
-  constructor() { }
+   }}
 
   ngOnInit(): void {
   }
   
   Salva(){
-    
-  }
+    debugger;
+    return this.http.post(this.apiUrl, this.usina).subscribe((result)=>{
+      alert("Usina Salva com Sucesso")
+  
+  })
 
-}
+}}
