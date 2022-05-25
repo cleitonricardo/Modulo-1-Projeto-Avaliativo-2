@@ -1,11 +1,11 @@
 export class Dashboard {
-id:string;
+id: number;
 apelido:string;
 local:string;
 marca:string;
 modelo:string;
 
-constructor (id:string, apelido:string,local:string,marca:string,modelo:string){
+constructor (id:number, apelido:string,local:string,marca:string,modelo:string){
     this.id=id;
     this.apelido=apelido;
     this.local=local;

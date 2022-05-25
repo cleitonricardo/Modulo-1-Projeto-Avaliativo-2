@@ -1,26 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import { Unidades } from './unidades';
+import { Component, Input, OnInit } from '@angular/core';
+import { UsinasService } from '../services/usinas.service';
 
-@Component({
+
+  @Component({
   selector: 'esp-unidades',
   templateUrl: './unidades.component.html',
   styleUrls: ['./unidades.component.scss'],
   
 })
 export class UnidadesComponent implements OnInit {
-  lista: Unidades[]=[];
 
-  constructor(private http:HttpClient) { }
+  @Input() usina:any;
+  lista: any;
+ 
+
+  constructor(private usinasService:UsinasService) { }
  
 
   ngOnInit(): void {
-    this.http
-    .get<Unidades[]>('http://localhost:3000/usina')
-    .subscribe((resultado) =>{
-      this.lista=resultado;
+    this.usinasService.getUsina().subscribe((resultado) =>{this.lista=resultado;
     })
+    
   }
 
-}
+  onDelete(id:number){
+    this.usinasService.deleteUsina(id).subscribe();
+  }
+  
+  
+  }
+
+
 
