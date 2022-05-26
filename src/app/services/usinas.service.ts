@@ -8,7 +8,7 @@ import { Unidades } from '../unidades/unidades';
 })
 export class UsinasService {
 
-  private apiUrl ="http://localhost:3000/usina";
+  private apiUrl ="http://localhost:3000/unidades";
 
   constructor(private http: HttpClient) { }
 
