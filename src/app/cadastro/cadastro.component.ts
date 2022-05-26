@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GeracoesService } from '../services/geracoes.service';
+//import { GeracoesService } from '../services/geracoes.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
