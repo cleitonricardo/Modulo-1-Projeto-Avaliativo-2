@@ -1,119 +1,136 @@
 {
-    "unidades": [{
-            "id": 156,
-            "apelido": "Painel 1",
-            "local": "Rua 5",
-            "marca": "Canadian",
-            "modelo": "155w",
-            "ativo": false
-        },
-        {
-            "id": 1562,
-            "apelido": "Painel 2",
-            "local": "Rua 15",
-            "marca": "Risen",
-            "modelo": "100w",
-            "ativo": true
-        },
-        {
-            "id": 523,
-            "apelido": "Painel 3",
-            "local": "Rio de janeiro",
-            "marca": "Hanwha",
-            "modelo": "200w",
-            "ativo": true
-        }, {
-            "id": 9523,
-            "apelido": "Painel 4",
-            "local": "São Paulo",
-            "marca": "Hanwha",
-            "modelo": "100w",
-            "ativo": true
-        }
-    ],
-    "geracoes": [{
-            "idUnity": 1,
-            "unity": "Unidade 1",
-            "date": "2022-02-01T11:15:29.801Z",
-            "kw": "25",
-            "id": 1
-        },
-        {
-            "idUnity": 1,
-            "unity": "Unidade 1",
-            "date": "2022-01-01T11:18:23.000Z",
-            "kw": "45",
-            "id": 2
-        },
-        {
-            "idUnity": 2,
-            "unity": "Unidade 2",
-            "date": "2021-12-01T11:18:37.000Z",
-            "kw": "38",
-            "id": 3
-        },
-        {
-            "idUnity": 2,
-            "unity": "Unidade 2",
-            "date": "2021-11-01T11:18:52.000Z",
-            "kw": "27",
-            "id": 4
-        },
-        {
-            "idUnity": 4,
-            "unity": "Unidade 4",
-            "date": "2021-10-01T11:19:15.000Z",
-            "kw": "48",
-            "id": 5
-        },
-        {
-            "idUnity": 4,
-            "unity": "Unidade 4",
-            "date": "2021-09-01T11:19:27.000Z",
-            "kw": "29",
-            "id": 6
-        },
-        {
-            "idUnity": 4,
-            "unity": "Unidade 4",
-            "date": "2021-08-01T11:19:47.000Z",
-            "kw": "51",
-            "id": 7
-        },
-        {
-            "idUnity": 2,
-            "unity": "Unidade 2",
-            "date": "2021-07-01T11:20:04.000Z",
-            "kw": "47",
-            "id": 8
-        },
-        {
-            "idUnity": 4,
-            "unity": "Unidade 4",
-            "date": "2021-06-01T11:20:17.000Z",
-            "kw": "42",
-            "id": 9
-        },
-        {
-            "idUnity": 1,
-            "unity": "Unidade 1",
-            "date": "2021-05-01T11:20:38.000Z",
-            "kw": "35",
-            "id": 10
-        },
-        {
-            "idUnity": 2,
-            "unity": "Unidade 2",
-            "date": "2021-04-01T11:20:49.000Z",
-            "kw": "47",
-            "id": 11
-        },
-        {
-            "idUnity": 2,
-            "unity": "Unidade 2",
-            "date": "2021-03-01T11:21:04.000Z",
-            "kw": "38",
-            "id": 12
-        }
-    ]
+  "unidades": [
+    {
+      "id": 156,
+      "apelido": "Painel 1",
+      "local": "Rua 5",
+      "marca": "Canadian",
+      "modelo": "155w",
+      "ativo": false
+    },
+    {
+      "id": 1562,
+      "apelido": "Painel 2",
+      "local": "Rua 15",
+      "marca": "Risen",
+      "modelo": "100w",
+      "ativo": true
+    },
+    {
+      "id": 523,
+      "apelido": "Painel 3",
+      "local": "Rio de janeiro",
+      "marca": "Hanwha",
+      "modelo": "200w",
+      "ativo": true
+    },
+    {
+      "id": 9523,
+      "apelido": "Painel 4",
+      "local": "São Paulo",
+      "marca": "Hanwha",
+      "modelo": "100w",
+      "ativo": true
+    },
+    {
+      "apelido": "eqw",
+      "local": "eqw",
+      "marca": "eqw",
+      "modelo": "eqw",
+      "id": 9524
+    },
+    {
+      "apelido": "asd",
+      "local": "dsa",
+      "marca": "das",
+      "modelo": "dsa",
+      "id": 9525
+    }
+  ],
+  "geracoes": [
+    {
+      "idUnity": 1,
+      "unity": "Unidade 1",
+      "date": "2022-02-01T11:15:29.801Z",
+      "kw": "25",
+      "id": 1
+    },
+    {
+      "idUnity": 1,
+      "unity": "Unidade 1",
+      "date": "2022-01-01T11:18:23.000Z",
+      "kw": "45",
+      "id": 2
+    },
+    {
+      "idUnity": 2,
+      "unity": "Unidade 2",
+      "date": "2021-12-01T11:18:37.000Z",
+      "kw": "38",
+      "id": 3
+    },
+    {
+      "idUnity": 2,
+      "unity": "Unidade 2",
+      "date": "2021-11-01T11:18:52.000Z",
+      "kw": "27",
+      "id": 4
+    },
+    {
+      "idUnity": 4,
+      "unity": "Unidade 4",
+      "date": "2021-10-01T11:19:15.000Z",
+      "kw": "48",
+      "id": 5
+    },
+    {
+      "idUnity": 4,
+      "unity": "Unidade 4",
+      "date": "2021-09-01T11:19:27.000Z",
+      "kw": "29",
+      "id": 6
+    },
+    {
+      "idUnity": 4,
+      "unity": "Unidade 4",
+      "date": "2021-08-01T11:19:47.000Z",
+      "kw": "51",
+      "id": 7
+    },
+    {
+      "idUnity": 2,
+      "unity": "Unidade 2",
+      "date": "2021-07-01T11:20:04.000Z",
+      "kw": "47",
+      "id": 8
+    },
+    {
+      "idUnity": 4,
+      "unity": "Unidade 4",
+      "date": "2021-06-01T11:20:17.000Z",
+      "kw": "42",
+      "id": 9
+    },
+    {
+      "idUnity": 1,
+      "unity": "Unidade 1",
+      "date": "2021-05-01T11:20:38.000Z",
+      "kw": "35",
+      "id": 10
+    },
+    {
+      "idUnity": 2,
+      "unity": "Unidade 2",
+      "date": "2021-04-01T11:20:49.000Z",
+      "kw": "47",
+      "id": 11
+    },
+    {
+      "idUnity": 2,
+      "unity": "Unidade 2",
+      "date": "2021-03-01T11:21:04.000Z",
+      "kw": "38",
+      "id": 12
+    }
+  ]
 }

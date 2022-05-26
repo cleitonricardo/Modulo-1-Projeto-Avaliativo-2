@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent implements OnInit {
-  private apiUrl ="http://localhost:3000/usina";
+  private apiUrl ="http://localhost:3000/unidades";
   usina:any;
   constructor(private http: HttpClient) {
     this.usina ={
@@ -23,7 +23,7 @@ export class CadastroComponent implements OnInit {
   }
   
   Salva(){
-    debugger;
+  
     return this.http.post(this.apiUrl, this.usina).subscribe((result)=>{
       alert("Usina Salva com Sucesso")
   
