@@ -1,17 +1,17 @@
 export class Dashboard {
 id: number;
-apelido:string;
-local:string;
-marca:string;
-modelo:string;
-ativo:boolean;
+idUnity:number;
+unity:string;
+date:string;
+kw:string;
 
-constructor (id:number, apelido:string,local:string,marca:string,modelo:string,ativo:boolean){
+   
+
+constructor (id:number, idUnity:number,unity:string,date:string,kw:string,){
     this.id=id;
-    this.apelido=apelido;
-    this.local=local;
-    this.marca=marca;
-    this.modelo=modelo;
-    this.ativo=ativo;
+    this.idUnity=idUnity;
+    this.unity=unity;
+    this.date=date;
+    this.kw=kw;
 }
 }

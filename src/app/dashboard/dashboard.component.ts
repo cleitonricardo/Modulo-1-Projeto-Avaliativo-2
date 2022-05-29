@@ -15,7 +15,9 @@ import { Observable } from 'rxjs';
 
 export class DashboardComponent implements OnInit{
 numbers :Unidades[]=[]
+number :Dashboard[]=[]
 qtd:any
+energia:any
 
 constructor(private http:HttpClient){}
 
@@ -24,7 +26,12 @@ ngOnInit(): void {
   .get<Unidades[]>('http://localhost:3000/unidades')
   .subscribe((resultado)=>{this.numbers=resultado})
 
+  this.http
+  .get<Dashboard[]>('http://localhost:3000/geracoes')
+  .subscribe((resultado1)=>{this.number=resultado1})
+
   this.getUsina().subscribe((resultado)=>{this.qtd=resultado.length})
+  this.getGeracoes().subscribe((resultado1)=>{this.energia=resultado1})
 }
  
   barChartData = {
@@ -49,6 +56,16 @@ ngOnInit(): void {
   getInativos(){
     const activePlants1 =this.numbers.filter(p =>p.ativo === false)
     return activePlants1.length
+  }
+
+  getGeracoes():Observable<Dashboard[]>{
+    return this.http.get<Dashboard[]>('http://localhost:3000/geracoes')
+  }
+  getEnergia(){
+    const Energia =this.number.filter(p =>p.unity === 'Unidade 1')
+    
+    console.log(Energia)
+    return Energia
   }
     
 

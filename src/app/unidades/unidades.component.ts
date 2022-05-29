@@ -25,6 +25,8 @@ export class UnidadesComponent implements OnInit {
 
   onDelete(id:number){
     this.usinasService.deleteUsina(id).subscribe();
+    alert("Unidade removida com sucesso")
+    this.ngOnInit();
   }
   
   

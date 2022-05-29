@@ -9,6 +9,7 @@ import { Unidades } from '../unidades/unidades';
 export class UsinasService {
 
   private apiUrl ="http://localhost:3000/unidades";
+  
 
   constructor(private http: HttpClient) { }
 
@@ -18,7 +19,11 @@ export class UsinasService {
 
   deleteUsina(id:number):Observable<Unidades>{
     const url=`${this.apiUrl}/${id}`;
+   
     return this.http.delete<Unidades>(url)
+    
    
   }
+  
+
 }
