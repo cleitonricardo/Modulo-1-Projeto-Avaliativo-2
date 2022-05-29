@@ -15,13 +15,12 @@ export class ConsumoComponent implements OnInit {
     this.geracao={
       apelido:'',
       data:'',
-      totalGerado:'',}
+      kw:'',}
       
    }
 
   ngOnInit(): void {
-    this.geracao=[""]
-  }
+      }
 
   Salva(){
     return this.http.post(this.apiUrl, this.geracao).subscribe((result)=>{

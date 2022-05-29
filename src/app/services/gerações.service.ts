@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Unidades } from '../unidades/unidades';
+import { Geracao } from '../consumo/geracao';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class GeraçõesService {
 
   constructor(private http: HttpClient) { }
   
-  getGeracoes():Observable<Unidades[]>{
-    return this.http.get<Unidades[]>(this.apiUrl1)
+  getGeracoes():Observable<Geracao[]>{
+    return this.http.get<Geracao[]>(this.apiUrl1)
   }
 }
