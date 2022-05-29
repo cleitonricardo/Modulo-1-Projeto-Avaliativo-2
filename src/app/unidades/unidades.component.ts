@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UsinasService } from '../services/usinas.service';
 
 
@@ -10,17 +11,19 @@ import { UsinasService } from '../services/usinas.service';
 })
 export class UnidadesComponent implements OnInit {
 
-  @Input() usina:any;
+  @Input() 
   lista: any;
+  usina:any;
  
 
-  constructor(private usinasService:UsinasService) { }
+  constructor(private usinasService:UsinasService, private route:ActivatedRoute, private router:Router) { }
  
 
   ngOnInit(): void {
     this.usinasService.getUsina().subscribe((resultado) =>{this.lista=resultado;
     })
-    
+
+   
   }
 
   onDelete(id:number){
@@ -28,12 +31,13 @@ export class UnidadesComponent implements OnInit {
     alert("Unidade removida com sucesso")
     this.ngOnInit();
   }
+ 
   edita(id:number){
+  this.router.navigate(['cadastro',id])
+
+}}
   
-  }
   
-  
-  }
 
 
 

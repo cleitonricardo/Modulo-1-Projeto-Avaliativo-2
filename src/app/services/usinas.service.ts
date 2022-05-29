@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 import { Unidades } from '../unidades/unidades';
 
 @Injectable({
@@ -21,9 +21,9 @@ export class UsinasService {
     const url=`${this.apiUrl}/${id}`;
    
     return this.http.delete<Unidades>(url)
-    
-   
+    }
+  loadByID(id:number){
+    return this.http.get(`${this.apiUrl}/${id}`).pipe(take(1));
   }
-  
 
 }

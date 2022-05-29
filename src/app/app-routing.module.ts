@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent},
   {path:"consumo",component:ConsumoComponent},
   {path:"unidades",component:UnidadesComponent},
-  {path:"cadastro",component:CadastroComponent}
+  {path:"cadastro/:id",component:CadastroComponent}
 ];
 
 @NgModule({
