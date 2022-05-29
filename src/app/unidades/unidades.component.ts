@@ -28,6 +28,9 @@ export class UnidadesComponent implements OnInit {
     alert("Unidade removida com sucesso")
     this.ngOnInit();
   }
+  edita(id:number){
+  
+  }
   
   
   }

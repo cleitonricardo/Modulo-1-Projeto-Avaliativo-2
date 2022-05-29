@@ -8,11 +8,11 @@ import { Geracao } from '../consumo/geracao';
 })
 export class GeraçõesService {
 
-  private apiUrl1 ="http://localhost:3000/geracoes";
+  private apiUrl ="http://localhost:3000/geracoes";
 
   constructor(private http: HttpClient) { }
   
   getGeracoes():Observable<Geracao[]>{
-    return this.http.get<Geracao[]>(this.apiUrl1)
+    return this.http.get<Geracao[]>(this.apiUrl)
   }
 }

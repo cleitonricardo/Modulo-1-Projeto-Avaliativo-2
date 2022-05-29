@@ -5,6 +5,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { Unidades } from '../unidades/unidades';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Geracao } from '../consumo/geracao';
+import { GeraçõesService } from '../services/gerações.service';
 
 
 @Component({
@@ -19,7 +21,8 @@ number :Dashboard[]=[]
 qtd:any
 energia:any
 
-constructor(private http:HttpClient){}
+constructor(private http:HttpClient, private geracoes:GeraçõesService){}
+public valores:Geracao[]=[];
 
 ngOnInit(): void {
   this.http
@@ -32,6 +35,19 @@ ngOnInit(): void {
 
   this.getUsina().subscribe((resultado)=>{this.qtd=resultado.length})
   this.getGeracoes().subscribe((resultado1)=>{this.energia=resultado1})
+
+  this.geracoes.getGeracoes()
+  .subscribe(retorno => {
+    this.valores = retorno.map( item =>
+      {
+        return new Geracao(
+          item.id,
+          item.apelido,
+          item.data,
+          item.kw
+        )
+      })
+  })
 }
  
   barChartData = {
@@ -67,8 +83,9 @@ ngOnInit(): void {
     console.log(Energia)
     return Energia
   }
+  
+
+}
     
 
-    
-}
 

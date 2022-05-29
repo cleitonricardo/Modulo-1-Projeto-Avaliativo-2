@@ -2,14 +2,14 @@ export class Geracao {
     id:number;
     apelido:string;
     data:string;
-    geracao:number;
+    kw:number;
    
     
-    constructor (id:number, apelido:string,data:string,geracao:number){
+    constructor (id:number, apelido:string,data:string,kw:number){
         this.id=id;
         this.apelido=apelido;
         this.data=data;
-        this.geracao=geracao;
+        this.kw=kw;
         
     }
     }
