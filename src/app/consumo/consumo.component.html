@@ -13,18 +13,18 @@
 
             <div class="row-1">
                 <p>Unidade geradora:</p>
-                <input>
+                <input [(ngModel)]="geracao.apelido">
             </div>
             <div class="row-1">
                 <p>Mês/ano</p>
-                <input>
+                <input [(ngModel)]="geracao.data">
             </div>
             <div class="row-1">
                 <p>Total kw gerado</p>
-                <input>
+                <input [(ngModel)]="geracao.totalGerado">
             </div>
-            <div class="row-1">
-                <button class="btn btn-success">Cadastrar</button>
+            <div class="row-2 mt-4">
+                <button class="btn btn-success " (click)="Salva()">Cadastrar</button>
             </div>
 
         </div>

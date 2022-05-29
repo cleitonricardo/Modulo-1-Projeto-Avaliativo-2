@@ -1,0 +1,56 @@
+#imgLogin {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 69%;
+    top: 132px;
+}
+
+#textLogin {
+    position: absolute;
+    width: 257.48px;
+    height: 48.75px;
+    left: 66%;
+    top: 300px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #374557;
+}
+
+#email {
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 66%;
+    top: 350px;
+    background: #FAFAFA;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#password {
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 66%;
+    top: 450px;
+    background: #FAFAFA;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#btnLogin {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 66%;
+    top: 550px;
+    background: #4CBC9A;
+    border-radius: 10px;
+}
